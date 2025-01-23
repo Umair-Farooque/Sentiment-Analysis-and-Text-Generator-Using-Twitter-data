@@ -9,3 +9,14 @@ to have a higher probability than "I am a pen" due to its naturalness.
 Utilizing this probability framework, you can develop an auto-complete system. For example, if the user
 types "I eat scrambled," the system can suggest a word "x" such that "I eat scrambled x" yields the highest
 probability. If "x" is "eggs," the completed sentence would be "I eat scrambled eggs."
+
+Here's an overview of the project steps:
+1. Load and preprocess data:
+a. Load and tokenize the data.
+b. Divide sentences into training and testing sets.
+c. Replace infrequent words with an unknown marker ("<unk>").
+2. Develop N-gram-based language models:
+a. Compute the count of n-grams from the dataset.
+b. Estimate the conditional probability of the next word using k-smoothing.
+c. Evaluate the N-gram models by calculating the perplexity score.
+3. Utilize your model to suggest the next word given a sentence.
