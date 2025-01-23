@@ -25,7 +25,7 @@ N-gram based language model
 In this task, you'll develop an n-grams language model where the probability of the next word depends
 only on the previous n-gram. The previous n-gram refers to the series of the preceding 'n' words in the
 sentence. To estimate the conditional probability for the word at position 't' in the sentence, given the
-preceding words, you'll use the following equation:
+preceding words, you'll use the following equation:<br>
 ![Screenshot 2025-01-23 202141](https://github.com/user-attachments/assets/77c51282-2893-446f-ad82-19a1c9793c2d)<br>
 
 
