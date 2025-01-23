@@ -20,3 +20,18 @@ c. Replace infrequent words with an unknown marker* ("<*unk*>").<br>
 b. Estimate the conditional probability of the next word using k-smoothing.<br>
 c. Evaluate the N-gram models by calculating the perplexity score.<br>*
 3. Utilize your model to suggest the next word given a sentence.<br>
+
+N-gram based language model
+In this task, you'll develop an n-grams language model where the probability of the next word depends
+only on the previous n-gram. The previous n-gram refers to the series of the preceding 'n' words in the
+sentence. To estimate the conditional probability for the word at position 't' in the sentence, given the
+preceding words, you'll use the following equation:
+P(wt
+|wt−1, wt−2, ⋯ , wt−n+1
+) =
+Count(wt−n+1, wt−n+2, ⋯ , wt−1, wt
+)
+Count(wt−n+1, wt−n+2, ⋯ , wt−1
+)
+
+This equation calculates the probability of word 't' given the previous n-gram.
