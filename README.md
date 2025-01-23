@@ -14,7 +14,7 @@ Here's an overview of the project steps:
 1. Load and preprocess data:<br>
 a. Load and tokenize the data.<br>
 b. Divide sentences into training and testing sets.<br>
-c. Replace infrequent words with an unknown marker ("<unk>>").<br>
+c. Replace infrequent words with an unknown marker ("<unk/>").<br>
 2. Develop N-gram-based language models:<br>
 a. Compute the count of n-grams from the dataset.<br>
 b. Estimate the conditional probability of the next word using k-smoothing.<br>
