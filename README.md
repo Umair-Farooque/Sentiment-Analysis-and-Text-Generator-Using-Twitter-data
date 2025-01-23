@@ -11,10 +11,10 @@ types "I eat scrambled," the system can suggest a word "x" such that "I eat scra
 probability. If "x" is "eggs," the completed sentence would be "I eat scrambled eggs."
 
 Here's an overview of the project steps:
-1. Load and preprocess data:
-a. Load and tokenize the data.
-b. Divide sentences into training and testing sets.
-c. Replace infrequent words with an unknown marker ("<unk>").
+1. Load and preprocess data:<br>
+a. Load and tokenize the data.<br>
+b. Divide sentences into training and testing sets.<br>
+c. Replace infrequent words with an unknown marker ("<unk>").<br>
 2. Develop N-gram-based language models:
 a. Compute the count of n-grams from the dataset.
 b. Estimate the conditional probability of the next word using k-smoothing.
