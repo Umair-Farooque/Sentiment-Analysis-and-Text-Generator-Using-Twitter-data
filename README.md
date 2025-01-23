@@ -26,12 +26,7 @@ In this task, you'll develop an n-grams language model where the probability of 
 only on the previous n-gram. The previous n-gram refers to the series of the preceding 'n' words in the
 sentence. To estimate the conditional probability for the word at position 't' in the sentence, given the
 preceding words, you'll use the following equation:
-P(wt
-|wt−1, wt−2, ⋯ , wt−n+1
-) =
-Count(wt−n+1, wt−n+2, ⋯ , wt−1, wt
-)
-Count(wt−n+1, wt−n+2, ⋯ , wt−1
-)
+![Screenshot 2025-01-23 202141](https://github.com/user-attachments/assets/77c51282-2893-446f-ad82-19a1c9793c2d)<br>
+
 
 This equation calculates the probability of word 't' given the previous n-gram.
