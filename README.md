@@ -29,4 +29,18 @@ preceding words, you'll use the following equation:<br>
 ![Screenshot 2025-01-23 202141](https://github.com/user-attachments/assets/77c51282-2893-446f-ad82-19a1c9793c2d)<br>
 
 
-This equation calculates the probability of word 't' given the previous n-gram.
+This equation calculates the probability of word 't' given the previous n-gram.<br>
+
+Probabilities for all words
+To estimate the probability of a word given the prior 'n' words using the n-gram counts and k-smoothing,
+you can define a function that implements the formula:
+
+![image](https://github.com/user-attachments/assets/116c66f3-b3e1-44cb-96de-0cc144ceb236)<br>
+
+where V the size of the vocabulary, and k is a positive constant (smoothing parameter). Consider k = 1
+
+For n-grams with zero counts, the probability estimate becomes:
+
+![image](https://github.com/user-attachments/assets/18584529-bf59-4874-96c9-30ab4973b561)<br>
+
+
